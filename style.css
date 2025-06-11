@@ -3,8 +3,8 @@
 
 /* --- Variáveis CSS para Cores --- */
 :root {
-    --color-primary: #FFC107; /* Amarelo ensolarado  */
-    --color-secondary: #FFC107; /* Amarelo ensolarado */
+    --color-primary: #FFC107; /* Amarelo ensolarado (agora primário) */
+    --color-secondary: #4CAF50; /* Verde vibrante (agora secundário) */
     --color-tertiary: #795548; /* Marrom terra */
     --color-background-light: #F9F9F9;
     --color-background-dark: #E0E0E0;
@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     font-size: 2.5em;
-    color: var(--color-primary);
+    color: var(--color-primary); /* Agora amarelo */
     text-align: center;
     margin-bottom: 40px;
     position: relative;
@@ -60,14 +60,14 @@ h2::after {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-secondary); /* Agora verde */
     margin: 10px auto 0;
     border-radius: 2px;
 }
 
 h3 {
     font-size: 1.8em;
-    color: var(--color-primary);
+    color: var(--color-primary); /* Agora amarelo */
 }
 
 p {
@@ -82,12 +82,12 @@ a {
 }
 
 a:hover {
-    color: var(--color-primary);
+    color: var(--color-primary); /* Agora amarelo */
 }
 
 .btn {
     display: inline-block;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary); /* Agora amarelo */
     color: var(--color-text-dark);
     padding: 12px 25px;
     border-radius: 5px;
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .btn:hover {
-    background-color: #FFD700; /* Um pouco mais claro */
+    background-color: #FFD700; /* Um pouco mais claro que o amarelo primário */
     transform: translateY(-2px);
     color: var(--color-text-dark);
 }
@@ -125,7 +125,7 @@ header p {
 
 /* --- Navigation Bar --- */
 nav {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary); /* Agora amarelo */
     color: var(--color-text-light);
     padding: 15px 0;
     box-shadow: 0 2px 5px var(--color-shadow);
@@ -153,8 +153,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--color-secondary);
-    border-bottom: 2px solid var(--color-secondary);
+    color: var(--color-secondary); /* Agora verde */
+    border-bottom: 2px solid var(--color-secondary); /* Agora verde */
 }
 
 /* --- Main Content Sections --- */
@@ -216,14 +216,14 @@ main section:nth-child(even) {
 .benefit-item h3 i {
     font-size: 1.5em;
     margin-right: 10px;
-    color: var(--color-primary);
+    color: var(--color-primary); /* Agora amarelo */
 }
 
 /* --- Challenges Section --- */
 .challenges-section .call-to-action {
     font-size: 1.2em;
     font-weight: bold;
-    color: var(--color-primary);
+    color: var(--color-primary); /* Agora amarelo */
     margin-top: 30px;
 }
 
@@ -259,11 +259,11 @@ footer {
 }
 
 footer a {
-    color: var(--color-secondary);
+    color: var(--color-secondary); /* Agora verde */
 }
 
 footer a:hover {
-    color: #FFD700;
+    color: #4CAF50; /* Um pouco mais escuro para o verde */
 }
 
 .contact-section {
