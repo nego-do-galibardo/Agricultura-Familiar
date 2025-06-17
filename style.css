@@ -1,52 +1,55 @@
-/* Importação de fontes */
+/* Importação da nova fonte: Montserrat */
 body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif; /* Fonte trocada */
+    line-height: 1.8; /* Espaçamento entre linhas aumentado para melhor legibilidade */
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f8f8f8; /* Fundo mais claro */
+    background-color: #f8f8f8;
+    font-size: 1.15em; /* Tamanho base da fonte aumentado */
 }
 
 h1, h2, h3 {
-    font-family: 'Merriweather', serif;
-    color: #2c3e50; /* Tom de azul escuro para títulos */
-    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* Títulos também usam Montserrat */
+    color: #2c3e50;
+    margin-bottom: 25px; /* Espaçamento entre títulos aumentado */
 }
 
 h1 {
-    font-size: 3.5em; /* Título maior */
+    font-size: 4em; /* Título principal ainda maior */
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4); /* Sombra para destaque */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* Sombra mais acentuada */
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.8em; /* Títulos de seção maiores */
     text-align: center;
-    margin-bottom: 40px;
-    position: relative; /* Para o sublinhado decorativo */
+    margin-bottom: 50px; /* Mais espaço para o sublinhado */
+    position: relative;
+    font-weight: 700; /* Títulos mais bold */
 }
 
 h2::after {
     content: '';
-    width: 60px;
-    height: 3px;
-    background-color: #4CAF50; /* Linha verde abaixo do título */
+    width: 80px; /* Linha de sublinhado maior */
+    height: 4px; /* Linha de sublinhado mais grossa */
+    background-color: #4CAF50;
     position: absolute;
-    bottom: -10px;
+    bottom: -15px; /* Posição ajustada */
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 h3 {
-    font-size: 1.8em;
-    color: #4CAF50; /* Verde vibrante para subtítulos */
+    font-size: 2em; /* Subtítulos maiores */
+    color: #4CAF50;
+    font-weight: 600; /* Subtítulos mais bold */
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1300px; /* Largura máxima ligeiramente aumentada */
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -56,28 +59,254 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://s2.static.brasilescola.uol.com.br/be/2022/12/homem-trabalhando-em-uma-plantacao-feita-na-modalidade-de-agricultura-familiar.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 400px; /* Altura mínima para o header */
+    padding: 120px 0; /* Mais padding no header */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    min-height: 450px; /* Altura mínima aumentada */
 }
 
 header p {
-    font-size: 1.4em;
-    margin-top: 10px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.6em; /* Texto do header maior */
+    margin-top: 15px;
+    max-width: 800px;
 }
 
-.header-btn { /* Botão "Saiba Mais" no header */
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.1em;
-    border-radius: 50px; /* Botão arredondado */
+.header-btn {
+    padding: 18px 35px; /* Botão maior */
+    font-size: 1.2em; /* Texto do botão maior */
+    margin-top: 40px;
+}
+
+/* Navegação */
+nav {
+    background-color: #388e3c;
+    padding: 18px 0; /* Mais padding na navegação */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav li {
+    margin: 0 25px; /* Espaço entre itens de navegação aumentado */
+}
+
+nav a {
+    font-weight: 600;
+    padding: 10px 18px; /* Padding dos links de navegação aumentado */
+    font-size: 1.05em; /* Texto de navegação ligeiramente maior */
+}
+
+/* Seções de Conteúdo */
+.section-padding {
+    padding: 100px 0; /* Mais padding entre seções */
+}
+
+.content-wrapper {
+    gap: 50px; /* Espaço entre imagem e texto aumentado */
+    margin-top: 50px;
+}
+
+.content-wrapper p {
+    font-size: 1.25em; /* Texto dos parágrafos maior */
+}
+
+.content-wrapper .section-image {
+    max-width: 45%; /* Imagem um pouco menor para dar mais espaço ao texto */
+    border-radius: 12px; /* Borda mais arredondada */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Sombra mais suave */
+}
+
+/* Seção de Benefícios */
+.benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Colunas maiores */
+    gap: 40px; /* Espaço entre cards aumentado */
+    margin-top: 50px;
+}
+
+.benefit-item {
+    padding: 35px; /* Padding interno dos cards aumentado */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* Sombra mais acentuada */
+}
+
+.benefit-icon {
+    font-size: 3.5em; /* Ícones maiores */
+    margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+    font-size: 1.7em; /* Títulos de benefício maiores */
+    margin-bottom: 12px;
+}
+
+.benefit-item p {
+    font-size: 1.1em; /* Texto do benefício ligeiramente maior */
+}
+
+/* Call to Action */
+.call-to-action {
+    font-size: 1.4em; /* CTA maior */
+    margin-top: 60px;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 6px solid #4CAF50; /* Borda mais grossa */
+}
+
+/* Galeria */
+.gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Imagens da galeria maiores */
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    height: 280px; /* Altura fixa maior */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    padding: 50px 0; /* Mais padding no footer */
+    margin-top: 60px;
+}
+
+.contact-section h3 {
+    font-size: 2em; /* Título de contato maior */
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1em; /* Texto de contato ligeiramente maior */
+}
+
+.footer-text {
+    font-size: 1em; /* Texto do footer ligeiramente maior */
+}
+
+/* --- Animações --- (mantidas como estão, mas os valores podem ser ajustados se a velocidade parecer diferente com os novos tamanhos) */
+.animate-fade-in,
+.animate-slide-up,
+.animate-pop-in,
+.animate-scale {
+    opacity: 0;
+    transform: translateY(25px); /* Ajuste de translação para o novo tamanho */
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out; /* Transição ligeiramente mais longa */
+}
+
+.animate-fade-in.is-visible,
+.animate-slide-up.is-visible,
+.animate-pop-in.is-visible,
+.animate-scale.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-pop-in {
+    transform: scale(0.85); /* Início da escala ajustado */
+}
+
+.animate-scale {
+    transform: scale(0.9);
+}
+
+/* Atrasos para animações sequenciais */
+.delay-1 { transition-delay: 0.2s; } /* Atrasos ligeiramente maiores */
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+.delay-4 { transition-delay: 0.8s; }
+.delay-5 { transition-delay: 1s; }
+
+/* --- Responsividade --- */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3.2em;
+    }
+    h2 {
+        font-size: 2.4em;
+    }
+    body {
+        font-size: 1.1em;
+    }
+    .benefits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .content-wrapper .section-image {
+        max-width: 70%;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 90px 0;
+        min-height: 350px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    body {
+        font-size: 1em;
+    }
+    nav {
+        padding: 15px 0;
+    }
+    nav li {
+        margin: 5px 10px;
+    }
+    .section-padding {
+        padding: 70px 0;
+    }
+    .benefits-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .content-wrapper {
+        gap: 30px;
+        margin-top: 40px;
+    }
+    .content-wrapper p {
+        font-size: 1.1em;
+    }
+    .benefit-item {
+        padding: 30px;
+    }
+    .gallery-item {
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1.1em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .header-btn {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+    .section-padding {
+        padding: 50px 0;
+    }
+    .content-wrapper .section-image {
+        max-width: 90%;
+    }
+    .contact-section h3 {
+        font-size: 1.6em;
+    }
+}/* Importação de fontes */
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 30px;
@@ -146,257 +375,3 @@ nav a.active-link { /* Classe para link ativo no futuro, se implementar */
 
 .content-wrapper p {
     flex: 1; /* Permite que o parágrafo ocupe o espaço disponível */
-    font-size: 1.1em;
-}
-
-.content-wrapper .section-image {
-    flex: 1; /* Permite que a imagem ocupe o espaço disponível */
-    max-width: 50%; /* Limita a largura da imagem */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.content-wrapper.reverse-order {
-    flex-direction: row-reverse; /* Inverte a ordem em Desafios */
-}
-
-.challenges-text {
-    flex: 1;
-}
-
-/* Seção de Benefícios */
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 colunas, ajustáveis */
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.benefit-item {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.benefit-item:hover {
-    transform: translateY(-10px); /* Efeito de elevação no hover */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-
-.benefit-icon {
-    font-size: 3em;
-    color: #4CAF50;
-    margin-bottom: 15px;
-    display: block; /* Garante que o ícone fique em sua própria linha */
-}
-
-.benefit-item h3 {
-    font-size: 1.5em;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #2c3e50;
-}
-
-.benefit-item p {
-    font-size: 1em;
-    color: #555;
-}
-
-/* Call to Action */
-.call-to-action {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #388e3c;
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #dcedc8; /* Fundo suave para o CTA */
-    border-radius: 8px;
-    border-left: 5px solid #4CAF50;
-}
-
-/* Galeria */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.gallery-item {
-    width: 100%;
-    height: 250px; /* Altura fixa para as imagens da galeria */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; /* Indica que a imagem é interativa */
-}
-
-.gallery-item:hover {
-    transform: scale(1.05); /* Zoom suave */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-/* Footer */
-footer {
-    background-color: #2c3e50; /* Azul escuro para o footer */
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-    margin-top: 50px;
-}
-
-.contact-section {
-    margin-bottom: 30px;
-}
-
-.contact-section h3 {
-    color: white;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.contact-section p {
-    margin-bottom: 10px;
-}
-
-.contact-section a {
-    color: #81c784; /* Verde claro para links no footer */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-section a:hover {
-    color: #a5d6a7;
-}
-
-.footer-text {
-    font-size: 0.9em;
-    opacity: 0.8;
-}
-
-
-/* --- Animações --- */
-/* Base para elementos a serem animados */
-.animate-fade-in,
-.animate-slide-up,
-.animate-pop-in,
-.animate-scale {
-    opacity: 0;
-    transform: translateY(20px); /* Padrão para slide-up */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* Estado visível */
-.animate-fade-in.is-visible,
-.animate-slide-up.is-visible,
-.animate-pop-in.is-visible,
-.animate-scale.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Animações específicas */
-.animate-pop-in {
-    transform: scale(0.9);
-}
-.animate-pop-in.is-visible {
-    transform: scale(1);
-}
-
-.animate-scale {
-    transform: scale(0.9);
-}
-.animate-scale.is-visible {
-    transform: scale(1);
-}
-
-
-/* Atrasos para animações sequenciais */
-.delay-1 { transition-delay: 0.15s; }
-.delay-2 { transition-delay: 0.3s; }
-.delay-3 { transition-delay: 0.45s; }
-.delay-4 { transition-delay: 0.6s; }
-.delay-5 { transition-delay: 0.75s; }
-
-/* --- Responsividade --- */
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 2.8em;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    .benefits-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .content-wrapper {
-        flex-direction: column; /* Pilha em telas menores */
-        text-align: center;
-    }
-    .content-wrapper .section-image {
-        max-width: 80%; /* Aumenta o tamanho da imagem em pilhas */
-    }
-    .content-wrapper.reverse-order {
-        flex-direction: column; /* Mantém a ordem em pilha */
-    }
-    .challenges-text {
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .header {
-        padding: 80px 0;
-        min-height: 300px;
-    }
-    h1 {
-        font-size: 2.2em;
-    }
-    header p {
-        font-size: 1.2em;
-    }
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav li {
-        margin: 5px 0;
-    }
-    .section-padding {
-        padding: 60px 0;
-    }
-    .benefits-grid, .gallery-grid {
-        grid-template-columns: 1fr; /* Uma coluna em celulares */
-    }
-    .benefit-item {
-        padding: 25px;
-    }
-    .gallery-item {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8em;
-    }
-    h2 {
-        font-size: 1.6em;
-    }
-    header p {
-        font-size: 1em;
-    }
-    .header-btn {
-        padding: 12px 25px;
-        font-size: 1em;
-    }
-    .section-padding {
-        padding: 40px 0;
-    }
-}
